@@ -1,6 +1,10 @@
 import React from "react";
 
 const Card = ({url, title, price, username}) => {
+  const handleClick = () => {
+    console.log(`Hai cliccato su ${title}`)
+    alert(`Hai cliccato su ${title}`)
+  }
 
   return (
     <article className="col-3 d-flex flex-column justify-content-center align-items-center">
@@ -11,7 +15,7 @@ const Card = ({url, title, price, username}) => {
         <h5 className="price fw-bold">{price}</h5>
         <h6>{username}</h6>
         <p className="timer fw-bold">00:05</p>
-        <div className="puntata">PUNTA</div>
+        <div onClick={handleClick} className="btn btn-success">PUNTA</div>
       </div>
     </article>
   );
