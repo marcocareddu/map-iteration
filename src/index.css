@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.divisore {
+  height: 2px;
+  background-color: lightgray;
+}
+
+.price {
+  color: #33CC99;
+}
+
+.timer {
+  color: red;
+}
+
+.puntata {
+  background-color: #7EE5A5;
+  cursor: pointer;
+}
