@@ -6,8 +6,12 @@ const Card = ({url, title, price, username}) => {
     alert(`Hai cliccato su ${title}`)
   }
 
+  const mouseHover = () => {
+    console.log(`Questo è un mouse hover`)
+  }
+
   return (
-    <article className="col-3 d-flex flex-column justify-content-center align-items-center">
+    <article onMouseOver={mouseHover} className="col-3 d-flex flex-column justify-content-center align-items-center">
       <img src={url} alt="immagine di card" className="img-fluid" />
       <div className="text-center w-100">
         <h6>{title}</h6>
